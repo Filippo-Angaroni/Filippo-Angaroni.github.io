@@ -1,5 +1,5 @@
 .main-header {
-    background-color: rgb(100, 20, 50);
+    background-color: rgb(185, 23, 218);
     display: flex;
     height: 10vw;
     justify-content: center;
@@ -8,4 +8,9 @@
 
 .main-header-font {
     font: Georgia;
+    color: rgb(0, 255, 0)
+}
+
+.lara::before {
+    rotate: 90deg;
 }
