@@ -7,11 +7,3 @@
 
 }
 
-.main-header-font {
-    font: Georgia;
-    color: rgb(0, 255, 0)
-}
-
-.lara::before {
-    rotate: 90deg;
-}

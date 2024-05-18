@@ -1,3 +1,24 @@
 :root {
     --main-header-bg: #ffe600;
 }
+
+@font-face {
+    font-family: Goli-Light;
+    src: url("/fonts/Goli/Goli-Light.ttf");
+}
+@font-face {
+    font-family: Goli-Regular;
+    src: url("/fonts/Goli/Goli-Regular.ttf");
+}
+@font-face {
+    font-family: Goli-Medium;
+    src: url("/fonts/Goli/Goli-Medium.ttf");
+}
+@font-face {
+    font-family: Goli-SemiBold;
+    src: url("/fonts/Goli/Goli-SemiBold.ttf");
+}
+@font-face {
+    font-family: Goli-Bold;
+    src: url("/fonts/Goli/Goli-Bold.ttf");
+}
