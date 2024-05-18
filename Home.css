@@ -1,9 +1,10 @@
+@import url("root.css");
+
 .main-header {
-    background-color: rgb(185, 23, 218);
+    background-color: var(--main-header-bg);
     display: flex;
-    height: 10vw;
-    justify-content: center;
-    align-items: center;
+    height: 20vw;
+
 }
 
 .main-header-font {
