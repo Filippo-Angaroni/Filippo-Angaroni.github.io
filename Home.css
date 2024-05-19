@@ -1,9 +1,48 @@
 @import url("root.css");
 
-.main-header {
+.home-page-header {
     background-color: var(--main-header-bg);
     display: flex;
-    height: 20vw;
+    height: 60vh;
+}
+
+.menu-header {
+    display: flex;
+    position: fixed;
+    height: fit-content;
+    width: 100vw;
+    z-index: 100;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.menu-header-link {
+    display: flex;
+    background: transparent;
+    border-width: 0;
+    font-family: Goli-SemiBold;
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 15px;
+    z-index: inherit;
+}
+.menu-header-bg {
+    display: flex;
+    position: fixed;
+    background: var(--main-header-bg);
+    height: 0px;
+    width: 50%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: calc(inherit - 1);
+    /* animation: menu-header-show-gb linear; */
 
 }
 
+.menu-header-bg.hidden {
+    height: 0px;
+}
+.menu-header-bg.visible {
+    height: calc(2vw + 30px);
+}
