@@ -21,9 +21,8 @@
     background: transparent;
     border-width: 0;
     font-family: Goli-SemiBold;
-    color: black;
-    font-size: 2em;
-    -moz-text-decoration-style: none;
+    color: var(--custom-black);
+    font-size: 1.5em;
     text-decoration: none;
     margin: 15px;
     z-index: inherit;
@@ -31,19 +30,18 @@
 .menu-header-bg {
     display: flex;
     position: fixed;
+    opacity: .8;
     background: var(--main-header-bg);
     height: 0px;
-    width: 50%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    width: inherit;
     z-index: calc(inherit - 1);
+    transition: height .5s ease;
     /* animation: menu-header-show-gb linear; */
-
 }
 
 .menu-header-bg.hidden {
     height: 0px;
 }
 .menu-header-bg.visible {
-    height: calc(2vw + 30px);
+    height: calc(1.5em + 30px);
 }

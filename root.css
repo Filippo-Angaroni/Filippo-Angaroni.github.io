@@ -1,5 +1,7 @@
 :root {
     --main-header-bg: #ffe600;
+    --custom-black: #333333;
+    --custom-white : #FBFFF4;
 }
 
 @font-face {
