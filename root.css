@@ -1,7 +1,17 @@
 :root {
-    --main-header-bg: #ffe600;
-    --custom-black: #333333;
+    --custom-yellow: #ffe600;
+    --custom-black: #000000;
     --custom-white : #FBFFF4;
+}
+
+.custom-button {
+    background-color: var(--custom-black);
+    color: var(--custom-yellow);
+    font-family: Goli-Regular;
+    padding-top: 3px;
+    border: 5px solid var(--custom-black);
+    border-width: 5px;
+    border-radius: 10px;
 }
 
 @font-face {

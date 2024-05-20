@@ -1,7 +1,7 @@
 @import url("root.css");
 
 .home-page-header {
-    background-color: var(--main-header-bg);
+    background-color: var(--custom-yellow);
     display: flex;
     height: 60vh;
 }
@@ -27,13 +27,14 @@
     margin: 15px;
     z-index: inherit;
 }
+
 .menu-header-bg {
     display: flex;
     position: fixed;
     opacity: .8;
-    background: var(--main-header-bg);
+    background: var(--custom-yellow);
     height: 0px;
-    width: inherit;
+    width: 50%;
     z-index: calc(inherit - 1);
     transition: height .5s ease;
     /* animation: menu-header-show-gb linear; */
@@ -44,4 +45,42 @@
 }
 .menu-header-bg.visible {
     height: calc(1.5em + 30px);
+}
+
+.title {
+    position: relative;
+    margin: 0;
+    color: rebeccapurple;
+    font-size: 5em;
+    font-family: Goli-Regular;
+    overflow: hidden;
+    animation: writer 1s 1s ease forwards;
+}
+
+/* .title::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    animation: writer .5s ease forwards;
+} */
+
+@keyframes writer {
+    0% {
+        width: 100%;
+
+    }
+    50% {
+        margin-left: 0px;
+        filter: blur(0px);
+    }
+    100% {
+        margin-left: -200px;
+        width: 0%;
+        filter: blur(10px);
+    }
 }
